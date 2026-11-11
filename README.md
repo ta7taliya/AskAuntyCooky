@@ -10,9 +10,9 @@ Pull a fortune: **[ta7taliya.github.io/CookysFortunes](https://ta7taliya.github.
 
 ## What this is
 
-A free anti-colonial fortune app by **Ta7talíya Michelle Nahanee** (Sḵwx̱wú7mesh Nation) — divination rendered as Salish basketry. Aunty Cooky is a pedagogy persona: *Not drag. Not mascot. Not for sale. Cooky is correction.*
+An anti-colonial fortune* app by **Ta7talíya Michelle Nahanee** (Sḵwx̱wú7mesh Nation) — * where fortune is what we can soothe, impact or give away
 
-The fortunes are free. The dirty chai keeps Aunty writing:
+A dirty chai and piece of pie keep this Aunty spry:
 [Buy This Aunty a Dirty Chai](https://square.link/u/OpGeGdnd)
 
 Friday fortunes by email, plus your first Broadside free:
@@ -26,4 +26,4 @@ One self-contained `index.html` — no frameworks, no build step, no dependencie
 
 The code here is visible because the site is public — but this is **not** an open-source project. All fortunes, teachings, frameworks, the Aunty Cooky persona, and associated artwork are © Ta7talíya Michelle Nahanee, all rights reserved. No reproduction, reuse, or derivative use of the content without permission.
 
-If a fortune brought you clarity, share the link — not the words.
+If a fortune brought you clarity, share the love and the link.
