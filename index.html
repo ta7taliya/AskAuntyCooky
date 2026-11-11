@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cooky's Fortunes — subversive divination from Aunty Cooky</title>
-<meta name="description" content="Subversive divination from Aunty Cooky. Some fortune telling sees your future. This Aunty tells you the truth about the present." />
-<meta property="og:title" content="Cooky's Fortunes" />
-<meta property="og:description" content="Subversive divination from Aunty Cooky. Pull a fortune." />
+<title>Ask Aunty Cooky — Subversive Divination</title>
+<meta name="description" content="Ask Aunty Cooky. Fortune telling that shares a truth about the present — and lets the future take care of itself." />
+<meta property="og:title" content="Ask Aunty Cooky" />
+<meta property="og:description" content="Fortune telling that shares a truth about the present — and lets the future take care of itself." />
 <meta name="theme-color" content="#fcf7ef" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Sora:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -243,6 +243,11 @@
   .persona, .intro { max-width: 42rem; margin-left: 0; margin-right: 0; color: var(--indigo); }
   .persona { opacity: .78; line-height: 1.6; }
   .intro { font-size: 15px; line-height: 1.8; }
+  .creator-credit { margin: 1rem 0 .15rem; color: var(--oxblood); font-size: 13px; font-weight: 600; letter-spacing: .015em; }
+  .creator-credit a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .creator-credit a:hover { color: var(--indigo); }
+  .cf-header .persona { margin-top: .3rem; font-size: 12px; }
+  .footer-rights { display: block; margin-top: .55rem; font-size: 11px; }
   .cf-main { max-width: none; display: flex; flex-direction: column; gap: 1.75rem; padding: 0; margin: 0; }
   .stage { width: 100%; align-items: stretch; }
   .ask { max-width: none; width: 100%; margin: 0 0 2rem; border: 1px solid rgba(37,49,90,.27);
@@ -293,6 +298,14 @@
     .portrait { box-shadow: 6px 6px 0 var(--sand); }
     .cf-title { font-size: clamp(2.45rem,12vw,3.2rem); }
   }
+
+  /* Creator attribution belongs below the interactive experience. */
+  .cf-footer { text-align: center; }
+  .cf-footer .footer-creator { margin: 0 auto 1.35rem; max-width: 680px; opacity: 1; }
+  .cf-footer .creator-credit { margin: 0 0 .4rem; opacity: 1; }
+  .cf-footer .creator-credit a { color: var(--indigo); text-decoration: underline; text-underline-offset: .18em; }
+  .cf-footer .persona { margin: 0; font-style: italic; opacity: 1; }
+  .cf-footer .footer-note { margin: 0 0 .35rem; }
 </style>
 </head>
 <body>
@@ -308,9 +321,8 @@
     <svg class="icon" width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
     Subversive divination
   </p>
-  <h1 class="cf-title font-display">Cooky&rsquo;s Fortunes</h1>
-  <p class="persona">Critical Sḵwx̱wú7mesh Theorist · Luxe Salish Designer · a little cranky · always liberating</p>
-  <p class="intro">Some fortune telling sees your future. This Aunty tells you the truth about the present — and lets the future take care of itself.</p>
+  <h1 class="cf-title font-display">Ask Aunty Cooky</h1>
+  <p class="intro">Fortune telling that shares a truth about the present — and lets the future take care of itself.</p>
     </header>
     <div class="cf-main">
 <section class="stage">
@@ -374,7 +386,14 @@
   </div>
 </main>
 
-<footer class="cf-footer">Fortunes gathered last for this sitting only — like all good visits.</footer>
+<footer class="cf-footer">
+  <div class="footer-creator">
+    <p class="creator-credit">An interactive creation by <a href="https://ta7taliya.com" target="_blank" rel="noopener noreferrer">Ta7talíya Michelle Nahanee</a></p>
+    <p class="persona">Sḵwx̱wú7mesh Liberation Designer, Writer &amp; sometimes Aunty Cooky</p>
+  </div>
+  <p class="footer-note">Fortunes gathered last for this sitting only — like all good visits.</p>
+  <span class="footer-rights">© 2026 Ta7talíya Michelle Nahanee · All rights reserved.</span>
+</footer>
 
 <script>
 /* ============================================================
