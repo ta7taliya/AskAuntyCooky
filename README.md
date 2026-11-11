@@ -20,7 +20,7 @@ Friday fortunes by email, plus your first Broadside free:
 
 ## How it's built
 
-One self-contained `index.html` — no frameworks, no build step, no dependencies. The fortune deck lives in a clearly marked list near the top of the script; each entry carries one of three voice registers: *Hun, Listen to Me* · *Don't Fuck With Me Today* · *Real Talk*.
+One self-contained `index.html` — no frameworks, no build step, no dependencies. The fortune deck lives in a clearly marked list near the top of the script; each entry carries one of three voice registers: *Hun, Listen to Me* · *Don't Eff With Me Today* · *Real Talk*.
 
 ## Rights
 
