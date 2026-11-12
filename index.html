@@ -4,9 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Ask Aunty Cooky — Subversive Divination</title>
-<meta name="description" content="Ask Aunty Cooky. Fortune telling that shares a truth about the present — and lets the future take care of itself." />
+<meta name="description" content="Ask Aunty Cooky. Aunty doesn’t predict the future. She tells the truth about right now — and lets tomorrow take care of itself." />
 <meta property="og:title" content="Ask Aunty Cooky" />
-<meta property="og:description" content="Fortune telling that shares a truth about the present — and lets the future take care of itself." />
+<meta property="og:description" content="Aunty doesn’t predict the future. She tells the truth about right now — and lets tomorrow take care of itself." />
 <meta name="theme-color" content="#fcf7ef" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Sora:wght@300;400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
@@ -306,6 +306,17 @@
   .cf-footer .creator-credit a { color: var(--indigo); text-decoration: underline; text-underline-offset: .18em; }
   .cf-footer .persona { margin: 0; font-style: italic; opacity: 1; }
   .cf-footer .footer-note { margin: 0 0 .35rem; }
+
+  /* Cookyverse 2026: invitation and the cranky positioning */
+  .cooky-positioning {
+    color: var(--oxblood); font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; line-height: 1.65; letter-spacing: .02em;
+    max-width: 42rem; margin: .8rem 0 0;
+  }
+  .question-instruction {
+    color: var(--indigo); opacity: .9; font-size: 14px;
+    line-height: 1.7; margin: 0 0 .95rem;
+  }
 </style>
 </head>
 <body>
@@ -322,14 +333,17 @@
     Subversive divination
   </p>
   <h1 class="cf-title font-display">Ask Aunty Cooky</h1>
-  <p class="intro">Fortune telling that shares a truth about the present — and lets the future take care of itself.</p>
+  <p class="intro">Aunty doesn’t predict the future. She tells the truth about right now — and lets tomorrow take care of itself.</p>
+  <p class="cooky-positioning">Critical Sḵwx̱wú7mesh Theorist · Luxe Salish Designer · a little cranky · always liberating</p>
     </header>
     <div class="cf-main">
 <section class="stage">
+    <!-- Instructions live before the question so the visitor knows what to do -->
+    <p class="question-instruction">Hold your question in your mind, or type it below. Then pull a fortune from the coil.</p>
     <!-- Question input -->
     <div class="ask">
       <svg class="icon ask-spark" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l1.9 5.7a2 2 0 0 0 1.3 1.3L21 12l-5.8 1.9a2 2 0 0 0-1.3 1.3L12 21l-1.9-5.8a2 2 0 0 0-1.3-1.3L3 12l5.8-1.9a2 2 0 0 0 1.3-1.3L12 3z"/></svg>
-      <input id="askInput" type="text" placeholder="What's weighing on you, hun?" aria-label="Tell Aunty what's weighing on you" />
+      <input id="askInput" type="text" placeholder="What's on your mind, hun?" aria-label="Tell Aunty what's on your mind" />
       <button id="askSend" class="ask-send" aria-label="Send your question">
         <svg class="icon" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7z"/></svg>
       </button>
@@ -355,7 +369,7 @@
 
     <!-- Incantation / result zone -->
     <div id="resultZone" class="result-zone">
-      <p class="idle-hint">Hold your question in your mind — or type it above — then pull a fortune from the coil.</p>
+      
     </div>
   </section>
 <div class="side">
@@ -422,7 +436,22 @@ const WISDOM = [
   { text: "If they can't figure you out, they can't control you. Be gorgeous and illegible. Stay dangerous.", tag: "Don't Eff With Me Today" },
   { text: "They want you invisible so they can pretend you don't exist. Show up. Shine. Make them see you.", tag: "Don't Eff With Me Today" },
   { text: "If you share your most powerful visions before they're rooted, colonizers will steal them and sell them back to you. Protect your magic.", tag: "Real Talk" },
-  { text: "Their urgency is their emergency. It isn't yours by default.", tag: "Real Talk" }
+  { text: "Their urgency is their emergency. It isn't yours by default.", tag: "Real Talk" },
+  // Delight collection: Spank, Hug & Butter (categories intentionally not displayed)
+  { text: "Enjoy the extra butter, baby. It’s time to say yes to YOU.", tag: "Hun, Listen to Me" },
+  { text: "Wear the good jewellery, hun. Every day. Some people wear armour. Aunty prefers accessories.", tag: "Don't Eff With Me Today" },
+  { text: "Pleasure is worth making time for. Show me your calendar; that’s your politics.", tag: "Real Talk" },
+  { text: "Your fabulousness is not up for committee review. Meeting adjourned. Now go be yourself.", tag: "Don't Eff With Me Today" },
+  { text: "Be a serious thinker and a ridiculous woman. Equal doses, hun. That’s Aunty’s prescription.", tag: "Real Talk" },
+  { text: "The revolution needs snacks, baby. Bring enough to share. True wealth is what we can give away.", tag: "Don't Eff With Me Today" },
+  { text: "Make something beautiful. Let them wonder what it’s for while you wander off to make something else. Play is a Doorway, baby.", tag: "Real Talk" },
+  { text: "Oh? Somebody wants you to be more reasonable? How unfortunate for them. Tell them to take a number.", tag: "Don't Eff With Me Today" },
+  { text: "Look at you, making a whole room for joy! Aunty’s bringing snacks. Keep going.", tag: "Hun, Listen to Me" },
+  { text: "You don’t need a big breakthrough today, hun. A deep breath and a short walk will do.", tag: "Hun, Listen to Me" },
+  { text: "That little thing you made just because you wanted to? That’s a beautiful use of your time.", tag: "Hun, Listen to Me" },
+  { text: "Take your time, sweetheart. There’s room for you to arrive in your own magnificent way.", tag: "Hun, Listen to Me" },
+  { text: "Take your time. We’re not sprinting to liberation; we’re sauntering.", tag: "Real Talk" },
+  { text: "Glamour is my security blanket and my warning label.", tag: "Don't Eff With Me Today" },
 ];
 
 
@@ -555,10 +584,6 @@ function buildCard(entry, q) {
     '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" style="color:#66110d" aria-hidden="true">' +
     '<path d="M12.67 19a2 2 0 0 0 1.42-.59l4.32-4.32a10 10 0 0 0 2.5-9.9 1 1 0 0 0-.8-.8 10 10 0 0 0-9.9 2.5l-4.32 4.32a2 2 0 0 0 0 2.83l4.1 4.1"/><path d="M16 8 2 22"/><path d="M17.5 15H9"/></svg>' +
     '<span class="cooky-says">Cooky says</span>';
-  const pill = document.createElement("span");
-  pill.className = "tag-pill " + (TAG_CLASS[entry.tag] || "tag-real");
-  pill.textContent = entry.tag;
-  meta.appendChild(pill);
   card.appendChild(meta);
 
   const cta = document.createElement("a");
@@ -591,13 +616,9 @@ function renderArchive() {
     p.textContent = item.entry.text;
     const meta = document.createElement("div");
     meta.className = "archive-meta";
-    const tag = document.createElement("span");
-    tag.className = "archive-tag " + (TAG_CLASS[item.entry.tag] || "tag-real");
-    tag.textContent = item.entry.tag;
     const time = document.createElement("span");
     time.className = "archive-time";
     time.textContent = item.time;
-    meta.appendChild(tag);
     meta.appendChild(time);
     li.appendChild(p);
     li.appendChild(meta);
