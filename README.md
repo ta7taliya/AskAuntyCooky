@@ -2,7 +2,7 @@
 
 **Subversive divination from Aunty Cooky.**
 
-Some fortune telling sees your future. This Aunty tells you the truth about the present — and lets the future take care of itself.
+Some fortune telling sees your future. This Aunty tells you a truth about the present — and lets the future take care of itself.
 
 Pull a fortune: **ta7taliya.github.io/AskAuntyCooky/**
 
@@ -10,17 +10,17 @@ Pull a fortune: **ta7taliya.github.io/AskAuntyCooky/**
 
 ## What this is
 
-An anti-colonial fortune* app by **Ta7talíya Michelle Nahanee** (Sḵwx̱wú7mesh Nation) — * where fortune is what we can soothe, impact or give away
+An anti-colonial fortune app by **Ta7talíya Michelle Nahanee** (Sḵwx̱wú7mesh Nation) — where fortune is defined by what we can soothe, impact or give away.
 
 A dirty chai and piece of pie keep this Aunty spry:
 [Buy This Aunty a Dirty Chai](https://square.link/u/OpGeGdnd)
 
-Friday fortunes by email, plus your first Broadside free:
-[Join the list](https://ta7taliya.kit.com/899191b27f)
+Subscribe to Aunty Cooky's Broadside here:
+[Join the list](https://www.ta7taliya.com)
 
 ## How it's built
 
-One self-contained `index.html` — no frameworks, no build step, no dependencies. The fortune deck lives in a clearly marked list near the top of the script; each entry carries one of three voice registers: *Hun, Listen to Me* · *Don't Eff With Me Today* · *Real Talk*.
+One self-contained `index.html` — no frameworks, no build step, no dependencies. The fortune deck lives in a clearly marked list near the top of the script; each entry carries one of three voice registers: *Hun, Listen to Me* · *Don't Eff With Me Today* · *Extra Butter, Baby*.
 
 ## Rights
 
