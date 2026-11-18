@@ -4,7 +4,7 @@
 
 Some fortune telling sees your future. This Aunty tells you a truth about the present — and lets the future take care of itself.
 
-Pull a fortune: **ta7taliya.github.io/AskAuntyCooky/**
+Pull a fortune: **auntycooky.com**
 
 ---
 
